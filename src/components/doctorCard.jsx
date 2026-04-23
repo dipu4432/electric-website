@@ -44,10 +44,13 @@ function DoctorCard({
               <p>Experience</p>
             </div>
 
-            <div>
-              <strong>₹ {fees}</strong>
-              <p>Fees</p>
-            </div>
+            {/* Show fees only if available */}
+            {fees && (
+              <div>
+                <strong>₹ {fees}</strong>
+                <p>Fees</p>
+              </div>
+            )}
           </div>
 
           {/* Location */}

@@ -41,7 +41,7 @@ const doctors = [
     name: "Dr. Palki Tiwari",
     title: "Trusted Diagnostic & Lab Testing Center",
     experience: 6,
-    fees: 300,
+    // fees: 300,
     hospital: "Advanced Pathology Center, Bilaspur",
     location: "Bilaspur",
     tags: [
