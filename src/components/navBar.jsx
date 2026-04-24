@@ -52,7 +52,7 @@ function NavBar() {
               <Nav.Link as={Link} to="/#gallery">Gallery</Nav.Link>
               <Nav.Link as={Link} to="/#reviews">Reviews</Nav.Link>
               <Nav.Link as={Link} to="/#contact">Contact</Nav.Link>
-              <Nav.Link as={Link} to="/pytholab">Pythology Lab</Nav.Link>
+              <Nav.Link as={Link} to="/pytholab">Pathology Lab</Nav.Link>
             </Nav>
 
             {/* Right Side Buttons */}

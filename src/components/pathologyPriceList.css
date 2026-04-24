@@ -1,0 +1,128 @@
+/* packages.css */
+
+.package-section {
+  background: #eef3f8;
+}
+
+/* Price Design */
+
+.price-box {
+  margin-left: 8px;
+}
+
+.old-price {
+  color: #ffdddd;
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.new-price {
+  color: #fff;
+  font-weight: 700;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 18px;
+}
+
+.package-card {
+  background: #dfe6ee;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.big-card {
+  grid-row: span 2;
+}
+
+.mid-card {
+  min-height: 260px;
+}
+
+.small-card {
+  min-height: 180px;
+}
+
+.package-header {
+  background: #3fa2db;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+}
+
+.package-body {
+  padding: 12px 16px;
+}
+
+/* Two columns for cards with price */
+.package-body.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 18px;
+}
+
+.package-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .big-card,
+  .mid-card,
+  .small-card {
+    grid-row: auto;
+    min-height: auto;
+  }
+
+  /* Keep 2 columns on mobile also */
+  .package-body.two-column {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 12px;
+  }
+
+  .package-header {
+    font-size: 13px;
+    padding: 8px 6px;
+  }
+
+  .package-body {
+    padding: 10px 12px;
+  }
+
+  .package-row {
+    font-size: 12px;
+    padding: 3px 0;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .package-body.two-column {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 8px;
+  }
+
+  .package-row {
+    font-size: 11px;
+  }
+
+  .package-header {
+    font-size: 12px;
+  }
+}

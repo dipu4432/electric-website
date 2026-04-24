@@ -61,7 +61,7 @@ function PathoServices() {
           className="text-center fw-bold mb-5"
           style={{ fontSize: "2.3rem", color: "#111" }}
         >
-          Services We Provide
+          Essential Tests Available
         </h2>
 
         <Row className="g-4 justify-content-center">
