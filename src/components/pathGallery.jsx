@@ -9,20 +9,12 @@ import p4 from "../assets/patholab/p4.webp";
 import p5 from "../assets/patholab/p5.webp";
 import c3 from "../assets/gallery/img3.webp";
 import c4 from "../assets/gallery/img4.webp";
-import about from "../assets/gallery/about.webp";
-import comp from "../assets/gallery/comp.webp";
-import detailing from "../assets/gallery/detailing.webp";
-import fever from "../assets/gallery/fever.webp";
 import inside from "../assets/gallery/inside.webp";
 import inv from "../assets/gallery/inv.webp";
-import main from "../assets/gallery/main.webp";
-import pathHome from "../assets/gallery/path-home.webp";
 import rest from "../assets/gallery/rest.webp";
-import sug from "../assets/gallery/sug.webp";
-import sugar from "../assets/gallery/sugar.webp";
 
 function Gallery() {
-  const images = [p1, p2, p3, p4, p5, c3, c4, about, comp, detailing, fever, inside, inv, main, pathHome, rest, sug, sugar];
+  const images = [p1, p2, p3, p4, p5, c3, c4, inside, inv, rest];
 
   const [startIndex, setStartIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(4);

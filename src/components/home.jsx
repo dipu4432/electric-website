@@ -14,7 +14,7 @@ const Home = () => {
         <div id="home"><Banner /></div>
         <div id="features"><Features /></div>
         {/* <div id="about"><About /></div> */}
-        <div id="about">
+        <div id="meet-doctors">
           <h1 className="text-center fw-bold my-3">Meet Our Doctors</h1>
           <Doctors />
         </div>
