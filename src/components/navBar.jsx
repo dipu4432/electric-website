@@ -83,14 +83,16 @@ function NavBar() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu align="end">
-                  <Dropdown.Item href={`tel:${phoneNumber1}`}>
-                    📞 {phoneNumber1}
-                  </Dropdown.Item>
+  <Dropdown.Item href={`tel:${phoneNumber1}`}>
+    <FaPhoneAlt style={{ color: "green", marginRight: "8px" }} />
+    {phoneNumber1}
+  </Dropdown.Item>
 
-                  <Dropdown.Item href={`tel:${phoneNumber2}`}>
-                    📞 {phoneNumber2}
-                  </Dropdown.Item>
-                </Dropdown.Menu>
+  <Dropdown.Item href={`tel:${phoneNumber2}`}>
+    <FaPhoneAlt style={{ color: "green", marginRight: "8px" }} />
+    {phoneNumber2}
+  </Dropdown.Item>
+</Dropdown.Menu>
 
               </Dropdown>
 

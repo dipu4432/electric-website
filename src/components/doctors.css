@@ -1,3 +1,7 @@
+/* =====================================
+   DOCTOR CARD FULL CSS
+===================================== */
+
 .doctor-card {
   width: 100%;
   background: #f4f6f9;
@@ -8,30 +12,31 @@
   flex-direction: column;
   height: 100%;
   border: 1px solid #d9e2ec;
-  /* Added bottom margin */
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
-/* Header */
+/* =====================================
+   HEADER
+===================================== */
 .doctor-header {
   display: flex;
   gap: 15px;
   padding: 20px;
-
-  /* Fill available space */
   flex-grow: 1;
 }
 
-/* Footer */
+/* =====================================
+   FOOTER
+===================================== */
 .doctor-footer {
   padding: 15px;
   background: #63dbf0;
-
-  /* Push footer to bottom */
   margin-top: auto;
 }
 
-/* ICON BOX */
+/* =====================================
+   ICON BOX
+===================================== */
 .doctor-icon-box {
   min-width: 70px;
   height: 70px;
@@ -47,9 +52,13 @@
   color: white;
 }
 
+/* =====================================
+   TEXT
+===================================== */
 .doctor-name {
   margin: 0;
   font-weight: 700;
+  font-size: 20px;
 }
 
 .doctor-title {
@@ -63,7 +72,9 @@
   color: #888;
 }
 
-/* Tags */
+/* =====================================
+   TAGS
+===================================== */
 .doctor-tags {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +89,9 @@
   font-size: 12px;
 }
 
-/* Info */
+/* =====================================
+   INFO SECTION
+===================================== */
 .doctor-info {
   display: flex;
   gap: 25px;
@@ -98,9 +111,12 @@
 .doctor-location {
   font-size: 13px;
   color: #555;
+  margin-top: 6px;
 }
 
-/* Button */
+/* =====================================
+   BUTTON
+===================================== */
 .btn-fill {
   width: 100%;
   padding: 12px;
@@ -108,16 +124,92 @@
   background: #28a745;
   color: white;
   font-size: 14px;
+  font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .btn-fill:hover {
   background: #23913d;
 }
 
+/* =====================================
+   ONLY BOTTOM PADDING 20PX
+===================================== */
 .doctors-section,
 .doctors-container,
 .container {
-  padding-bottom: 60px;
+  padding-bottom: 20px !important;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 992px) {
+  .doctor-name {
+    font-size: 18px;
+  }
+
+  .doctor-header {
+    padding: 18px;
+  }
+
+  .doctor-info {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-header {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .doctor-icon-box {
+    min-width: 60px;
+    height: 60px;
+  }
+
+  .doctor-icon {
+    font-size: 26px;
+  }
+
+  .doctor-name {
+    font-size: 17px;
+  }
+
+  .doctor-info {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn-fill {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .container {
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .doctor-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .doctor-tags {
+    justify-content: center;
+  }
+
+  .doctor-info {
+    justify-content: center;
+  }
+
+  .doctor-location {
+    text-align: center;
+  }
 }

@@ -1,6 +1,9 @@
+/* gallery.jsx */
+
 import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import "./gallery.css";
+
 import g1 from "../assets/gallery/gallery1.webp";
 import g2 from "../assets/gallery/gallery2.webp";
 import g3 from "../assets/gallery/gallery3.webp";
@@ -13,12 +16,15 @@ import inv from "../assets/gallery/inv.webp";
 import rest from "../assets/gallery/rest.webp";
 
 function Gallery() {
-  const images = [g1, g2, g3, c1, c2, c3, c4, inside, inv, rest];
+  const images = [
+    g1, g2, g3, c1, c2,
+    c3, c4, inside, inv, rest
+  ];
 
   const [startIndex, setStartIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(4);
 
-  // Responsive visible count
+  /* Responsive visible cards */
   useEffect(() => {
     const updateCount = () => {
       if (window.innerWidth < 576) {
@@ -38,34 +44,39 @@ function Gallery() {
     return () => window.removeEventListener("resize", updateCount);
   }, []);
 
-  // Auto rotate (slightly slower = better UX)
+  /* Auto slider */
   useEffect(() => {
     const interval = setInterval(() => {
       setStartIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // changed to 3s
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
-  // Visible images
-  const getVisibleImages = () => {
-    const result = [];
-    for (let i = 0; i < visibleCount; i++) {
-      result.push(images[(startIndex + i) % images.length]);
-    }
-    return result;
-  };
+  /* Show visible images */
+  const visibleImages = [];
+
+  for (let i = 0; i < visibleCount; i++) {
+    visibleImages.push(
+      images[(startIndex + i) % images.length]
+    );
+  }
 
   return (
     <section className="gallery-section">
       <Container>
-        <h2 className="text-center fw-bold mb-4">Gallery</h2>
+        <h2 className="text-center fw-bold gallery-title">
+          Gallery
+        </h2>
 
         <div className="gallery-wrapper">
           <div className="gallery-row">
-            {getVisibleImages().map((img, index) => (
+            {visibleImages.map((img, index) => (
               <div key={index} className="gallery-card">
-                <img src={img} alt={`gallery-${index}`} />
+                <img
+                  src={img}
+                  alt={`gallery-${index}`}
+                />
               </div>
             ))}
           </div>

@@ -59,8 +59,8 @@ function Features() {
 ];
 
   return (
-    <div style={{ backgroundColor: "#eef2f6", padding: "40px 0", paddingBottom: "10px" }}>
-      <Container>
+    <div style={{ backgroundColor: "#eef2f6", padding: "20px 0", paddingBottom: "20px", marginBottom: "0" }}>
+      <Container className="pb-0 mb-0">
         <Row className="gx-4 gy-3 mb-0">
           {features.map((item, index) => (
             <Col key={index} md={6} lg={3}>
