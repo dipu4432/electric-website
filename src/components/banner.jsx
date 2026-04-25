@@ -80,7 +80,7 @@ function Banner() {
                   {slide.isPatholab && (
                     <Button
                       className="read-btn"
-                      onClick={() => navigate("/pytholab")}
+                      onClick={() => navigate("/patholab")}
                     >
                       Know More
                     </Button>

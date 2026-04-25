@@ -67,7 +67,7 @@ function NavBar() {
                 Contact
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/pytholab" onClick={closeNavbar}>
+              <Nav.Link as={NavLink} to="/patholab" onClick={closeNavbar}>
                 Pathology Lab
               </Nav.Link>
 

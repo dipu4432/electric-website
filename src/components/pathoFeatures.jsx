@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaFlask, FaClock, FaHome, FaCog, FaUserMd, FaFileAlt, FaShieldAlt, FaWallet } from "react-icons/fa";
 
-function PythoFeatures() {
+function PathoFeatures() {
   const features = [
     {
       icon: <FaFlask size={28} />,
@@ -98,4 +98,4 @@ function PythoFeatures() {
   );
 }
 
-export default PythoFeatures;
+export default PathoFeatures;

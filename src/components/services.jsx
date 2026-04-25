@@ -5,7 +5,7 @@ import "./services.css";
 import fractureImg from "../assets/services/fracture-treatment.webp";
 import jointImg from "../assets/services/joint.webp";
 import arthritisImg from "../assets/services/arthritis-treatment.webp";
-import physioImg from "../assets/services/pytholab.png";
+import pathology from "../assets/services/patholab.png";
 import kneeImg from "../assets/services/knee.webp";
 
 function Services() {
@@ -28,9 +28,9 @@ function Services() {
       desc: "Arthritis & Joint Inflammation Care",
     },
     {
-      image: physioImg,
-      title: "Pytholab",
-      desc: "Advanced Pyhtolab Services",
+      image: pathology,
+      title: "Pathology Lab",
+      desc: "Advanced Pahtolab Services Available",
       readMore: true,
     },
     {
@@ -72,7 +72,7 @@ function Services() {
                 {item.readMore && (
                   <button
                     className="read-more-btn"
-                    onClick={() => navigate("/pytholab")}
+                    onClick={() => navigate("/patholab")}
                   >
                     Read More
                   </button>

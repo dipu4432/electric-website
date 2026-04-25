@@ -1,11 +1,11 @@
-import "./pytholab.css";
+import "./patholab.css";
 import bannerImg from "../assets/patholab-bg.webp";
 import PathGallery from "./pathGallery.jsx";
-import PythoFeatures from "./pythoFeatures.jsx";
+import PathoFeatures from "./pathoFeatures.jsx";
 import PathoServices from "./pathoservices.jsx";
 import PathologyPriceList from "./pathologyPriceList.jsx";
 
-function Pytholab() {
+function Patholab() {
   return (
     <div>
       <section className="physio-page">
@@ -44,7 +44,7 @@ function Pytholab() {
           </p>
         </div>
       </section>
-      <PythoFeatures />
+      <PathoFeatures />
       <PathoServices />
       <PathologyPriceList />
       <PathGallery />
@@ -52,4 +52,4 @@ function Pytholab() {
   );
 }
 
-export default Pytholab;
+export default Patholab;
