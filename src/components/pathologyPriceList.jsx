@@ -87,7 +87,7 @@ function PathologyPriceList() {
   ];
 
   return (
-    <section className="package-section py-0">
+    <section className="package-section py-0" style={{marginBottom: "0"}}>
       <Container>
         <div className="package-grid">
           {packages.map((pkg, index) => (
