@@ -55,11 +55,11 @@ function PathoServices() {
   ];
 
   return (
-    <section style={{ background: "#eef2f6", padding: "20px 0" }}>
+    <section style={{ background: "#eef2f6", padding: "10px 0" }}>
       <Container>
         <h2
-          className="text-center fw-bold mb-5"
-          style={{ fontSize: "2.3rem", color: "#111" }}
+          className="text-center fw-bold mb-4"
+          style={{ fontSize: "2rem", color: "#111" }}
         >
           Essential Tests Available
         </h2>

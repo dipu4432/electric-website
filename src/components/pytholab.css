@@ -22,14 +22,14 @@
   z-index: 2;
   text-align: center;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   max-width: 800px;
 }
 
 .physio-content h1 {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .physio-content p {
@@ -41,7 +41,7 @@
 .physio-details {
   max-width: 1000px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 60px 10px;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .physio-banner {
-    height: 42vh;
+    height: 52vh;
   }
 
   .physio-content h1 {
