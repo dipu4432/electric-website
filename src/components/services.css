@@ -6,13 +6,13 @@
     #ffffff 60%,
     #ecf2fe 100%
   );
-  padding: 50px 0 30px;
+  padding: 10px 0 0px;
 }
 
 /* Heading */
 .services-title {
   font-size: 2.2rem;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   color: #111827;
 }
 
@@ -92,7 +92,7 @@
 
   .service-card {
     min-height: auto;
-    padding: 24px 18px;
+    padding: 24px 10px;
   }
 
   .service-card h5,

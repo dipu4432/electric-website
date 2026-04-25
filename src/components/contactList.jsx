@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 function ContactList() {
   return (
-    <div className="contact-card" style={{ background: "#eef2f6", padding: "30px 0" }}>
+    <div className="contact-card" style={{ background: "#eef2f6", padding: "10px 0" }}>
       <Container>
         {/* Heading */}
         <h2 className="text-center fw-bold mb-4">Contact Us</h2>
