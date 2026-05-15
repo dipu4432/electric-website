@@ -47,6 +47,19 @@
   flex-wrap: wrap;
 }
 
+.read-btn {
+  background: #3B82A0 !important;
+  border: none !important;
+  padding: 12px 24px !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+}
+
+.read-btn:hover {
+  background: #2f6f88 !important;
+}
+
 /* Book Button */
 .book-btn {
   background: #2fb36d !important;
@@ -62,7 +75,7 @@
 
 /* Call Button */
 .call-btn {
-  background: #3b82a0 !important;
+  background: #3B82A0 !important;
   border: none !important;
   padding: 12px 24px !important;
   border-radius: 10px !important;
@@ -70,7 +83,7 @@
 }
 
 .call-btn:hover {
-  background: #2f6e87 !important;
+  background: #2f6f88 !important;
 }
 
 /* Carousel dots */
