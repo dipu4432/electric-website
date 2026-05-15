@@ -4,8 +4,8 @@ import Col from "react-bootstrap/Col";
 
 function ContactList() {
   return (
-    <div className="contact-card" style={{ background: "#eef2f6", padding: "30px 0" }}>
-      <Container>
+    <div className="contact-card" style={{ backgroundColor: "#eef2f6", padding: "20px 0",paddingBottom: "20px", marginBottom: "0" }}>
+      <Container className="pb-0 mb-0">
         {/* Heading */}
         <h2 className="text-center fw-bold mb-4">Contact Us</h2>
 
@@ -19,6 +19,7 @@ function ContactList() {
                 borderRadius: "10px",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
                 height: "100%",
+                marginBottom: "0",
               }}
             >
               <p className="mb-1">
@@ -41,6 +42,7 @@ function ContactList() {
                 borderRadius: "10px",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
                 height: "100%",
+                marginBottom: "0",
               }}
             >
               <p className="mb-1">

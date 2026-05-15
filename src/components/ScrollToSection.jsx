@@ -7,11 +7,18 @@ const ScrollToSection = () => {
   useEffect(() => {
     if (pathname === "/" && hash) {
       const element = document.querySelector(hash);
+
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth" });
-        }, 100); // small delay ensures DOM is loaded
+        }, 100);
       }
+    } else {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
     }
   }, [hash, pathname]);
 

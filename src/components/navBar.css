@@ -1,42 +1,112 @@
-/* Mobile navbar spacing fix */
+/* =====================================
+   REMOVE DROPDOWN ARROW
+===================================== */
+.no-arrow::after {
+  display: none !important;
+}
+
+/* =====================================
+   CALL BUTTON
+===================================== */
+.call-btn {
+  background-color: #3B82A0 !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.call-btn:hover {
+  background-color: #2f6f88 !important;
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+.navbar {
+  background: #fff !important;
+}
+
+.navbar-nav {
+  gap: 18px;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #222 !important;
+  padding: 8px 0 !important;
+  transition: 0.3s ease;
+}
+
+/* =====================================
+   REMOVE ALL RED COLOR + UNDERLINE
+===================================== */
+.navbar-nav .nav-link::after {
+  display: none !important;
+}
+
+/* Hover keep normal color */
+.navbar-nav .nav-link:hover {
+  color: #222 !important;
+}
+
+/* Active clicked keep normal color */
+.navbar-nav .nav-link.active {
+  color: #222 !important;
+}
+
+/* =====================================
+   MOBILE
+===================================== */
 @media (max-width: 991px) {
   .nav-mobile {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 10px;
   }
 
   .nav-mobile .nav-link {
-    padding: 8px 0;
     font-size: 15px;
+    padding: 8px 0 !important;
+    color: #222 !important;
+  }
+
+  .nav-mobile .nav-link::after {
+    display: none !important;
+  }
+
+  .nav-mobile .nav-link:hover,
+  .nav-mobile .nav-link.active {
+    color: #222 !important;
   }
 
   .navbar-collapse {
     padding-top: 12px;
   }
 
-  .navbar .btn {
-    margin-top: 10px;
+  .navbar .btn,
+  .call-btn {
+    margin-top: 12px;
     width: 100%;
   }
-
-  .navbar .btn:first-of-type {
-    margin-top: 15px;
-  }
 }
 
-/* Logo */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
+/* =====================================
+   LOGO
+===================================== */
 .navbar-brand img {
   height: 55px;
+  width: auto;
 }
 
 @media (max-width: 768px) {
   .navbar-brand img {
-    height: 40px;
+    height: 42px;
   }
 }

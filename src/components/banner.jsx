@@ -67,20 +67,20 @@ function Banner() {
 
                 <div className="hero-buttons">
                   {/* Call Doctor */}
-                  <Button
+                  {/* <Button
                     className="call-btn"
                     onClick={() => {
                       window.location.href = `tel:${phoneNumber}`;
                     }}
                   >
                     <FaPhoneAlt /> Call Doctor
-                  </Button>
+                  </Button> */}
 
                   {/* Show only on 2nd slide */}
                   {slide.isPatholab && (
                     <Button
                       className="read-btn"
-                      onClick={() => navigate("/pytholab")}
+                      onClick={() => navigate("/patholab")}
                     >
                       Know More
                     </Button>

@@ -12,7 +12,7 @@ function Doctors() {
               title={doc.title}
               hospital={doc.hospital}
               tags={doc.tags}
-              experience={doc.experience}
+              {...(doc.experience ? { experience: doc.experience } : {})}
               {...(doc.fees ? { fees: doc.fees } : {})}
               location={doc.location}
               icon={doc.icon}

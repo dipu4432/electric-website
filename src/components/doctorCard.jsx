@@ -39,16 +39,19 @@ function DoctorCard({
 
           {/* Info */}
           <div className="doctor-info">
-            <div>
-              <strong>{experience}+ Years</strong>
-              <p>Experience</p>
-            </div>
+            {/* Show experience only if available */}
+            {experience && (
+              <div>
+                <strong>{experience}+ Years</strong>
+                <p>Experience</p>
+              </div>
+            )}
 
             {/* Show fees only if available */}
             {fees && (
               <div>
                 <strong>₹ {fees}</strong>
-                <p>Fees</p>
+                <p>Consultation Fees</p>
               </div>
             )}
           </div>
