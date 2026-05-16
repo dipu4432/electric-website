@@ -4,10 +4,19 @@ import PathGallery from "./pathGallery.jsx";
 import PathoFeatures from "./pathoFeatures.jsx";
 import PathoServices from "./pathoservices.jsx";
 import PathologyPriceList from "./pathologyPriceList.jsx";
+import SEO from "./SEO";
 
 function Patholab() {
   return (
     <div>
+      <SEO
+        title="Pathology Lab Services Bilaspur"
+        description="Advanced pathology lab services at Tiwari Nursing Home, Bilaspur. Blood tests, urine tests, diabetes screening, thyroid profile, liver function test, and full body checkups."
+        ogTitle="Pathology Lab Services | Tiwari Nursing Home"
+        ogDescription="Accurate testing, trusted diagnostics and fast reports. Blood tests, diabetes screening, thyroid profile, and more."
+        ogUrl="https://tiwariorthocare.com/patholab"
+        canonical="https://tiwariorthocare.com/patholab"
+      />
       <section className="physio-page">
         {/* Banner */}
         <div
