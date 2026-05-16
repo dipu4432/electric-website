@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import doctors from "../data/doctorsData";
+import SEO from "./SEO";
 import "./about.css";
 
 function About() {
@@ -7,10 +8,24 @@ function About() {
   const doctor = doctors.find((doc) => doc.id === id);
 
   if (!doctor) {
-    return <h2 className="text-center mt-5">No Doctor Found</h2>;
+    return (
+      <>
+        <SEO title="Doctor Not Found" />
+        <h2 className="text-center mt-5">No Doctor Found</h2>
+      </>
+    );
   }
 
   return (
+    <>
+      <SEO
+        title={doctor.name}
+        description={`${doctor.name} - ${doctor.title} at Tiwari Nursing Home, Bilaspur. Specializing in ${doctor.tags?.join(", ")}.`}
+        ogTitle={`${doctor.name} - ${doctor.title}`}
+        ogDescription={`${doctor.name} - ${doctor.title} at Tiwari Nursing Home, Bilaspur. Book an appointment online.`}
+        ogUrl={`https://tiwariorthocare.com/doctor/${doctor.id}`}
+        canonical={`https://tiwariorthocare.com/doctor/${doctor.id}`}
+      />
     <div
       style={{ backgroundColor: "#f4f6f9" }}
     >
@@ -95,6 +110,7 @@ function About() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

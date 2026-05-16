@@ -75,7 +75,7 @@ function Gallery() {
               <div key={index} className="gallery-card">
                 <img
                   src={img}
-                  alt={`gallery-${index}`}
+                  alt={`Tiwari Nursing Home gallery image ${startIndex + index + 1}`}
                 />
               </div>
             ))}
