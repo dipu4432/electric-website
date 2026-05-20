@@ -49,8 +49,8 @@ function ContactList() {
                 <strong>Mobile Number:</strong>
               </p>
               <p className="text-muted mb-0" style={{ fontSize: "14px" }}>
-                09901106057 <br />
-                09300310670
+                9901106087 <br />
+                9300310670
               </p>
             </div>
           </Col>
