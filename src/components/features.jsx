@@ -1,60 +1,59 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { GiKneeCap } from "react-icons/gi";
-import { MdEmergency } from "react-icons/md";
-import { RiHealthBookFill } from "react-icons/ri";
 import {
-  FaHospital,
-  FaClock,
-  FaHandHoldingMedical,
+  FaUserShield,
   FaShieldAlt,
   FaBolt,
-  FaClinicMedical,
+  FaHome,
+  FaTools,
+  FaLightbulb,
+  FaPhoneAlt,
+  FaRupeeSign,
 } from "react-icons/fa";
 // import "./features.css"
 
 function Features() {
   const features = [
   {
-    icon: <GiKneeCap size={28} />,
-    title: "Orthopedic Specialist",
-    desc: "Bones & Joint Treatment",
+    icon: <FaUserShield size={28} />,
+    title: "Certified Electricians",
+    desc: "Experienced professionals delivering safe and reliable electrical solutions.",
   },
   {
-    icon: <FaHospital size={28} />,
-    title: "Modern Facilities",
-    desc: "Advanced medical equipment",
-  },
-  {
-    icon: <FaClock size={28} />,
-    title: "Timely Consultation",
-    desc: "Quick patient care",
-  },
-  {
-    icon: <FaHandHoldingMedical size={28} />,
-    title: "Affordable Treatment",
-    desc: "Quality healthcare",
-  },
-  {
-    icon: <MdEmergency size={28} />,
-    title: "Emergency Care",
-    desc: "24/7 Emergency Support",
-  },
-  {
-    icon: <FaClinicMedical size={28} />,
-    title: "Trusted Clinic",
-    desc: "Reliable & trusted care",
-  },
-  {
-    icon: <RiHealthBookFill size={28} />,
-    title: "Hygiene & Safety",
-    desc: "Clean & safe environment",
+    icon: <FaShieldAlt size={28} />,
+    title: "Safety First",
+    desc: "Following strict safety standards in every installation and repair.",
   },
   {
     icon: <FaBolt size={28} />,
-    title: "Quick Recovery",
-    desc: "Fast healing process",
+    title: "Fast Response",
+    desc: "Quick inspections and timely completion of every project.",
+  },
+  {
+    icon: <FaHome size={28} />,
+    title: "Residential & Commercial",
+    desc: "Complete electrical services for homes, offices, and businesses.",
+  },
+  {
+    icon: <FaTools size={28} />,
+    title: "Repair & Maintenance",
+    desc: "Professional troubleshooting and preventive maintenance services.",
+  },
+  {
+    icon: <FaLightbulb size={28} />,
+    title: "Quality Products",
+    desc: "Using genuine electrical components from trusted brands.",
+  },
+  {
+    icon: <FaPhoneAlt size={28} />,
+    title: "Customer Support",
+    desc: "Friendly support to answer your questions and service requests.",
+  },
+  {
+    icon: <FaRupeeSign size={28} />,
+    title: "Affordable Pricing",
+    desc: "Transparent quotations with competitive pricing and no hidden charges.",
   },
 ];
 
