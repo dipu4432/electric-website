@@ -26,9 +26,9 @@ function ContactList() {
                 <strong>Address:</strong>
               </p>
               <p className="text-muted mb-0" style={{ fontSize: "14px" }}>
-                Tiwari Nursing Home, Near Mini Mata Chowk,
-                Ring Road, Bilaspur-Chhattisgarh-495001,
-                Chhattisgarh.
+                ELECTRICAL BROTHERS GROUP, NEAR PATWARI, PRASHIKSRAN KENDRA, SURYA CHOWK LINGIYADIH,
+                BILASPUR 495006,
+                CHHATTISGARH.
               </p>
             </div>
           </Col>
@@ -49,8 +49,8 @@ function ContactList() {
                 <strong>Mobile Number:</strong>
               </p>
               <p className="text-muted mb-0" style={{ fontSize: "14px" }}>
-                9901106087 <br />
-                9300310670
+                8959164260 <br />
+                sandeepvastrakar14@gmail.com
               </p>
             </div>
           </Col>

@@ -4,21 +4,31 @@ import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import "./gallery.css";
 
-import g1 from "../assets/gallery/gallery1.webp";
-import g2 from "../assets/gallery/gallery2.webp";
-import g3 from "../assets/gallery/gallery3.webp";
-import c1 from "../assets/gallery/img1.webp";
-import c2 from "../assets/gallery/img2.webp";
-import c3 from "../assets/gallery/img3.webp";
-import c4 from "../assets/gallery/img4.webp";
-import inside from "../assets/gallery/inside.webp";
-import inv from "../assets/gallery/inv.webp";
-import rest from "../assets/gallery/rest.webp";
+// import g1 from "../assets/gallery/gallery1.webp";
+// import g2 from "../assets/gallery/gallery2.webp";
+// import g3 from "../assets/gallery/gallery3.webp";
+// import c1 from "../assets/gallery/img1.webp";
+// import c2 from "../assets/gallery/img2.webp";
+// import c3 from "../assets/gallery/img3.webp";
+// import c4 from "../assets/gallery/img4.webp";
+// import inside from "../assets/gallery/inside.webp";
+// import inv from "../assets/gallery/inv.webp";
+// import rest from "../assets/gallery/rest.webp";
+
+import g1 from "../assets/gallery/andrey-matveev.jpg";
+import g2 from "../assets/gallery/blaz-erzetic.jpg";
+import g3 from "../assets/gallery/community-archives.jpg";
+import c1 from "../assets/gallery/mariana.jpg";
+import c2 from "../assets/gallery/singapore-st.jpg";
 
 function Gallery() {
+  // const images = [
+  //   g1, g2, g3, c1, c2,
+  //   c3, c4, inside, inv, rest
+  // ];
+
   const images = [
-    g1, g2, g3, c1, c2,
-    c3, c4, inside, inv, rest
+    g1, g2, g3, c1, c2
   ];
 
   const [startIndex, setStartIndex] = useState(0);

@@ -17,7 +17,7 @@ function Testimonials() {
           className="text-center fw-bold"
           style={{ marginTop: "0", marginBottom: "20px" }}
         >
-          Patient Reviews
+          Reviews
         </h2>
 
         <div className="row g-4 mb-0">

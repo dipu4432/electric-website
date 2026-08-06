@@ -77,14 +77,14 @@ function Banner() {
                   </Button> */}
 
                   {/* Show only on 2nd slide */}
-                  {slide.isPatholab && (
+                  {/* {slide.isPatholab && (
                     <Button
                       className="read-btn"
                       onClick={() => navigate("/patholab")}
                     >
                       Know More
                     </Button>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
