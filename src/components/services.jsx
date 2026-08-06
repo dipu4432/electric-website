@@ -2,43 +2,50 @@ import Container from "react-bootstrap/Container";
 import { useNavigate } from "react-router-dom";
 import "./services.css";
 
-import fractureImg from "../assets/services/fracture-treatment.webp";
-import jointImg from "../assets/services/joint.webp";
-import arthritisImg from "../assets/services/arthritis-treatment.webp";
-import pathology from "../assets/services/patholab.png";
-import kneeImg from "../assets/services/knee.webp";
+// import fractureImg from "../assets/services/fracture-treatment.webp";
+// import jointImg from "../assets/services/joint.webp";
+// import arthritisImg from "../assets/services/arthritis-treatment.webp";
+// import pathology from "../assets/services/patholab.png";
+// import kneeImg from "../assets/services/knee.webp";
+
+import {
+  FaBolt,
+  FaPlug,
+  FaTools,
+  FaBuilding,
+  FaHome,
+} from "react-icons/fa";
 
 function Services() {
   const navigate = useNavigate();
 
   const services = [
-    {
-      image: fractureImg,
-      title: "Fracture Treatment",
-      desc: "Bones & Joint Fracture Care",
-    },
-    {
-      image: jointImg,
-      title: "Joint Pain Treatment",
-      desc: "Relief from Joint Pain",
-    },
-    {
-      image: arthritisImg,
-      title: "Arthritis Treatment",
-      desc: "Arthritis & Joint Inflammation Care",
-    },
-    {
-      image: pathology,
-      title: "Pathology Lab",
-      desc: "Advanced Pahtolab Services Available",
-      readMore: true,
-    },
-    {
-      image: kneeImg,
-      title: "Knee Pain Treatment",
-      desc: "Advanced Knee Pain Care",
-    },
-  ];
+  {
+    image: <FaBolt size={60} color="#FFC107" />,
+    title: "Electrical Installation",
+    desc: "Professional electrical installations for homes, offices, and industries.",
+  },
+  {
+    image: <FaPlug size={60} color="#FFC107" />,
+    title: "Electrical Equipment Supply",
+    desc: "Supply of quality electrical equipment, components, and accessories.",
+  },
+  {
+    image: <FaTools size={60} color="#FFC107" />,
+    title: "Repair & Maintenance",
+    desc: "Fast troubleshooting, repair, and preventive maintenance services.",
+  },
+  {
+    image: <FaBuilding size={60} color="#FFC107" />,
+    title: "Commercial & Industrial",
+    desc: "Reliable electrical solutions for commercial buildings and industrial facilities.",
+  },
+  {
+    image: <FaHome size={60} color="#FFC107" />,
+    title: "Residential Electrical Services",
+    desc: "Safe wiring, lighting, upgrades, and electrical maintenance for homes.",
+  },
+];
 
   return (
     <section className="services-section">
@@ -55,11 +62,12 @@ function Services() {
               <div className="service-card">
                 {/* Image */}
                 <div className="icon-circle">
-                  <img
+                  {/* <img
                     src={item.image}
                     alt={item.title}
                     className="service-img"
-                  />
+                  /> */}
+                  {item.image}
                 </div>
 
                 {/* Title */}
