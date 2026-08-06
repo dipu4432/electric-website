@@ -45,7 +45,7 @@ function NavBar() {
               </Nav.Link>
 
               <Nav.Link as={NavLink} to="/#meet-doctors" onClick={closeNavbar}>
-                Meet Doctors
+                About Us
               </Nav.Link>
 
               <Nav.Link as={NavLink} to="/#services" onClick={closeNavbar}>
@@ -61,12 +61,12 @@ function NavBar() {
               </Nav.Link>
 
               <Nav.Link as={NavLink} to="/#contact" onClick={closeNavbar}>
-                Contact
+                Contact Us
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/patholab" onClick={closeNavbar}>
+              {/* <Nav.Link as={NavLink} to="/patholab" onClick={closeNavbar}>
                 Pathology Lab
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
 
             {/* Right Side */}
@@ -74,7 +74,7 @@ function NavBar() {
               <Dropdown>
                 <Dropdown.Toggle className="call-btn no-arrow">
                   <FaPhoneAlt className="me-2" />
-                  Call Doctor
+                  Call Now
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu align="end">
@@ -85,12 +85,12 @@ function NavBar() {
                     {phoneNumber1}
                   </Dropdown.Item>
 
-                  <Dropdown.Item href={`tel:${phoneNumber2}`}>
+                  {/* <Dropdown.Item href={`tel:${phoneNumber2}`}>
                     <FaPhoneAlt
                       style={{ color: "green", marginRight: "8px" }}
                     />
                     {phoneNumber2}
-                  </Dropdown.Item>
+                  </Dropdown.Item> */}
                 </Dropdown.Menu>
               </Dropdown>
             </div>
