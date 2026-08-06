@@ -8,7 +8,7 @@ function Testimonials() {
       className="testimonial-section"
       style={{
         paddingTop: "20px",
-        paddingBottom: "20px",   // reduced bottom padding
+        paddingBottom: "20px", // reduced bottom padding
         marginBottom: "0",
       }}
     >
@@ -52,11 +52,15 @@ function Testimonials() {
                   height="50"
                   alt="user"
                 />
-                <h6 className="mb-0 fw-bold">Rinju Singh</h6>
+                <h6 className="mb-0 fw-bold">Priya Sharma</h6>
+                <p className="text-muted mb-0">Homeowner</p>
               </div>
 
               <p className="text-muted">
-                Best orthopedic doctor in Bilaspur. I got relief from knee pain.
+                "We hired Electrical Brothers Group for electrical maintenance
+                at our home, and the service exceeded our expectations. The
+                electricians were knowledgeable, friendly, and the pricing was
+                fair. We will definitely use their services again."
               </p>
 
               <div className="text-warning">
@@ -78,11 +82,15 @@ function Testimonials() {
                   height="50"
                   alt="user"
                 />
-                <h6 className="mb-0 fw-bold">Sujit Singh</h6>
+                <h6 className="mb-0 fw-bold">Rajesh Kumar</h6>
+                <p className="text-muted mb-0">Business Owner</p>
               </div>
 
               <p className="text-muted">
-                Highly recommended. Doctor explains everything clearly.
+                "Electrical Brothers Group did an excellent job with the wiring
+                and lighting installation at our office. Their team was
+                professional, punctual, and completed the work safely and on
+                schedule. Highly recommended!"
               </p>
 
               <div className="text-warning">
