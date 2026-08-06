@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 import AppointmentForm from "./appointmentForm";
 
 /* Import your banner images */
-import heroBg1 from "../assets/orthopedic-clinic.webp";
-import heroBg2 from "../assets/pathoLab.webp";
-import heroBg3 from "../assets/ortho.webp";
+import heroBg1 from "../assets/electrical-brothers/raze-solar.jpg";
+import heroBg2 from "../assets/electrical-brothers/han-dora.jpg";
+import heroBg3 from "../assets/electrical-brothers/bermix-studio.jpg";
 
 function Banner() {
   const [show, setShow] = useState(false);
@@ -20,20 +20,20 @@ function Banner() {
   const slides = [
     {
       image: heroBg1,
-      title: "Trusted Orthopedic Care in Bilaspur",
-      subtitle: "Expert treatment for bones, joints and injuries.",
+      title: "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
+      subtitle: "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
       isPatholab: false,
     },
     {
       image: heroBg2,
-      title: "Advanced Patholab Services",
-      subtitle: "Accurate tests, fast reports and trusted diagnostic care.",
+      title: "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
+      subtitle: "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
       isPatholab: true,
     },
     {
       image: heroBg3,
-      title: "Pain-Free Joint Movement Starts Here",
-      subtitle: "Specialized treatment for knee, back and shoulder pain.",
+      title: "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
+      subtitle: "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
       isPatholab: false,
     },
   ];
