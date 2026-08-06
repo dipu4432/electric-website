@@ -19,7 +19,7 @@ const Home = () => {
       <div id="home"><Banner /></div>
       <div id="features"><Features /></div>
       <div id="meet-doctors">
-        <h1 className="text-center fw-bold my-1">Meet Our Doctors</h1>
+        <h1 className="text-center fw-bold my-1">About Us</h1>
         <Doctors />
       </div>
       <div id="services"><Services /></div>
