@@ -60,7 +60,7 @@ function Testimonials() {
                 "We hired Electrical Brothers Group for electrical maintenance
                 at our home, and the service exceeded our expectations. The
                 electricians were knowledgeable, friendly, and the pricing was
-                fair. We will definitely use their services again."
+                fair. We will definitely use their services again.."
               </p>
 
               <div className="text-warning">
