@@ -5,7 +5,8 @@ import { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { FaPhoneAlt } from "react-icons/fa";
 import "./navBar.css";
-import logo from "../assets/llogoo.webp";
+// import logo from "../assets/llogoo.webp";
+import logo from "../assets/electric_logo.png";
 import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
