@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useState } from "react";
 import { Dropdown } from "react-bootstrap";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import "./navBar.css";
 // import logo from "../assets/llogoo.webp";
 import logo from "../assets/electric_logo.png";
@@ -72,7 +72,19 @@ function NavBar() {
 
             {/* Right Side */}
             <div className="d-flex gap-2 nav-btn-group">
-              <Dropdown>
+              {/* WhatsApp Button */}
+              <a
+                href={`https://wa.me/${phoneNumber1}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="whatsapp-icon"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp className="me-2" />
+                {/* <span>WhatsApp</span> */}
+              </a>
+
+              <Dropdown className="call-dropdown">
                 <Dropdown.Toggle className="call-btn no-arrow">
                   <FaPhoneAlt className="me-2" />
                   Call Now
