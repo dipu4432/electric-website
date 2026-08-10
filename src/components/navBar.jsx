@@ -45,7 +45,7 @@ function NavBar() {
                 Home
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/#meet-doctors" onClick={closeNavbar}>
+              <Nav.Link as={NavLink} to="/#about-us" onClick={closeNavbar}>
                 About Us
               </Nav.Link>
 

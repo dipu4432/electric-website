@@ -1,10 +1,11 @@
 import Banner from "./banner";
 import Features from "./features";
+import AboutEB from "./AboutEB";
 import Gallery from "./gallery";
 import Services from "./services";
 import Testimonials from "./testimonials";
 import ContactList from "./contactList";
-import Doctors from "./doctors";
+// import Doctors from "./doctors";
 import SEO from "./SEO";
 
 const Home = () => {
@@ -19,9 +20,9 @@ const Home = () => {
       />
       <div id="home"><Banner /></div>
       <div id="features"><Features /></div>
-      <div id="meet-doctors">
-        <h1 className="text-center fw-bold my-1">About Us</h1>
-        <Doctors />
+      <div id="about-us">
+        <h1 className="text-center fw-bold mt-3">About Us</h1>
+        <AboutEB />
       </div>
       <div id="services"><Services /></div>
       <div id="gallery"><Gallery /></div>
