@@ -1,6 +1,6 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import "./banner.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Modal, Button, Carousel } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import AppointmentForm from "./appointmentForm";
@@ -13,6 +13,19 @@ import heroBg3 from "../assets/electrical-brothers/bermix-studio.jpg";
 function Banner() {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = heroBg1;
+
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
 
   const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
 

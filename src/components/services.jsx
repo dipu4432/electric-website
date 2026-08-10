@@ -51,7 +51,7 @@ function Services() {
     <section className="services-section">
       <Container>
         {/* Heading */}
-        <h2 className="text-center fw-bold services-title mb-4">
+        <h2 className="text-center fw-bold services-title my-4">
           Services We Provide
         </h2>
 

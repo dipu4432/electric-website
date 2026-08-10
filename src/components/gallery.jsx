@@ -75,7 +75,7 @@ function Gallery() {
   return (
     <section className="gallery-section">
       <Container>
-        <h2 className="text-center fw-bold gallery-title">
+        <h2 className="text-center fw-bold gallery-title my-4">
           Gallery
         </h2>
 

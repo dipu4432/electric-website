@@ -17,8 +17,7 @@ function Testimonials() {
     >
       <div className="container pb-0 mb-0">
         <h2
-          className="text-center fw-bold"
-          style={{ marginTop: "0", marginBottom: "20px" }}
+          className="text-center fw-bold my-4"
         >
           Reviews
         </h2>
