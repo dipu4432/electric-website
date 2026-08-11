@@ -13,7 +13,7 @@ import {
   FaPlug,
   FaTools,
   FaBuilding,
-  FaHome,
+  FaSolarPanel,
 } from "react-icons/fa";
 
 function Services() {
@@ -37,13 +37,13 @@ function Services() {
   },
   {
     image: <FaBuilding size={60} color="#FFC107" />,
-    title: "Commercial & Industrial",
-    desc: "Reliable electrical solutions for commercial buildings and industrial facilities.",
+    title: "Residential, Commercial & Industrial Services",
+    desc: "Complete electrical solutions.",
   },
   {
-    image: <FaHome size={60} color="#FFC107" />,
-    title: "Residential Electrical Services",
-    desc: "Safe wiring, lighting, upgrades, and electrical maintenance for homes.",
+    image: <FaSolarPanel size={60} color="#FFC107" />,
+    title: "Solar Services",
+    desc: "Installation, maintenance, and support for efficient solar power systems.",
   },
 ];
 
