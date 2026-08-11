@@ -5,7 +5,15 @@ import { FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 function ContactList() {
   return (
-    <div className="contact-card" style={{ backgroundColor: "#eef2f6", padding: "20px 0",paddingBottom: "20px", marginBottom: "0" }}>
+    <div
+      className="contact-card"
+      style={{
+        backgroundColor: "#eef2f6",
+        padding: "20px 0",
+        paddingBottom: "20px",
+        marginBottom: "0",
+      }}
+    >
       <Container className="pb-0 mb-0">
         {/* Heading */}
         <h2 className="text-center fw-bold mb-4">Contact Us</h2>
@@ -15,7 +23,8 @@ function ContactList() {
           <Col md={6}>
             <div
               style={{
-                background: "linear-gradient(to bottom, #ECF2FE 0%, #FFFFFF 40%, #FFFFFF 60%, #ECF2FE 100%)",
+                background:
+                  "linear-gradient(to bottom, #ECF2FE 0%, #FFFFFF 40%, #FFFFFF 60%, #ECF2FE 100%)",
                 padding: "20px",
                 borderRadius: "10px",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
@@ -27,9 +36,8 @@ function ContactList() {
                 <strong>Address:</strong>
               </p>
               <p className="mb-0" style={{ fontSize: "14px" }}>
-                ELECTRICAL BROTHERS GROUP, NEAR PATWARI, PRASHIKSRAN KENDRA, SURYA CHOWK LINGIYADIH,
-                BILASPUR 495006,
-                CHHATTISGARH.
+                ELECTRICAL BROTHERS GROUP, NEAR PATWARI, PRASHIKSRAN KENDRA,
+                SURYA CHOWK LINGIYADIH, BILASPUR 495006, CHHATTISGARH.
               </p>
             </div>
           </Col>
@@ -38,7 +46,8 @@ function ContactList() {
           <Col md={6}>
             <div
               style={{
-                background: "linear-gradient(to bottom, #ECF2FE 0%, #FFFFFF 40%, #FFFFFF 60%, #ECF2FE 100%)",
+                background:
+                  "linear-gradient(to bottom, #ECF2FE 0%, #FFFFFF 40%, #FFFFFF 60%, #ECF2FE 100%)",
                 padding: "20px",
                 borderRadius: "10px",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
@@ -54,33 +63,36 @@ function ContactList() {
                 sandeepvastrakar14@gmail.com
               </p> */}
               <p className="mb-2 d-flex align-items-center">
-  <FaPhoneAlt className="me-2 text-primary" />
-  <a href="tel:8959164260" className="text-decoration-none text-dark">
-    8959164260
-  </a>
-</p>
+                <FaPhoneAlt className="me-2 text-primary" />
+                <a
+                  href="tel:8959164260"
+                  className="text-decoration-none text-dark"
+                >
+                  8959164260
+                </a>
+              </p>
 
-<p className="mb-2 d-flex align-items-center">
-  <FaEnvelope className="me-2 text-primary" />
-  <a
-    href="mailto:sandeepvastrakar14@gmail.com"
-    className="text-decoration-none text-dark"
-  >
-    sandeepvastrakar14@gmail.com
-  </a>
-</p>
+              <p className="mb-2 d-flex align-items-center">
+                <FaEnvelope className="me-2 text-primary" />
+                <a
+                  href="mailto:sandeepvastrakar14@gmail.com"
+                  className="text-decoration-none text-dark"
+                >
+                  sandeepvastrakar14@gmail.com
+                </a>
+              </p>
 
-<p className="mb-0 d-flex align-items-center">
-  <FaWhatsapp className="me-2 text-success" />
-  <a
-    href="https://wa.me/918959164260"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-decoration-none text-dark"
-  >
-    8959164260
-  </a>
-</p>
+              <p className="mb-0 d-flex align-items-center">
+                <FaWhatsapp className="me-2 text-success" />
+                <a
+                  href="https://wa.me/918959164260"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none text-dark"
+                >
+                  8959164260
+                </a>
+              </p>
             </div>
           </Col>
         </Row>

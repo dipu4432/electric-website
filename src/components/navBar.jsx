@@ -73,7 +73,7 @@ function NavBar() {
             {/* Right Side */}
             <div className="d-flex gap-2 nav-btn-group">
               {/* WhatsApp Button */}
-              <a
+              {/* <a
                 href={`https://wa.me/${phoneNumber1}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,8 +81,7 @@ function NavBar() {
                 aria-label="WhatsApp"
               >
                 <FaWhatsapp className="me-2" />
-                {/* <span>WhatsApp</span> */}
-              </a>
+              </a> */}
 
               <Dropdown className="call-dropdown">
                 <Dropdown.Toggle className="call-btn no-arrow">
