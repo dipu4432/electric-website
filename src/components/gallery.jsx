@@ -20,6 +20,7 @@ import g2 from "../assets/gallery/blaz-erzetic.jpg";
 import g3 from "../assets/gallery/community-archives.jpg";
 import c1 from "../assets/gallery/mariana.jpg";
 import c2 from "../assets/gallery/singapore-st.jpg";
+import c3 from "../assets/gallery/sushanta-rokka.jpg";
 
 function Gallery() {
   // const images = [
@@ -28,7 +29,7 @@ function Gallery() {
   // ];
 
   const images = [
-    g1, g2, g3, c1, c2
+    g1, g2, g3, c1, c2, c3
   ];
 
   const [startIndex, setStartIndex] = useState(0);
