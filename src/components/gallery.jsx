@@ -15,12 +15,12 @@ import "./gallery.css";
 // import inv from "../assets/gallery/inv.webp";
 // import rest from "../assets/gallery/rest.webp";
 
-import g1 from "../assets/gallery/andrey-matveev.jpg";
-import g2 from "../assets/gallery/blaz-erzetic.jpg";
-import g3 from "../assets/gallery/community-archives.jpg";
-import c1 from "../assets/gallery/mariana.jpg";
-import c2 from "../assets/gallery/singapore-st.jpg";
-import c3 from "../assets/gallery/sushanta-rokka.jpg";
+import g1 from "../assets/gallery/andrey-matveev.webp";
+import g2 from "../assets/gallery/blaz-erzetic.webp";
+import g3 from "../assets/gallery/community-archives.webp";
+import c1 from "../assets/gallery/mariana.webp";
+import c2 from "../assets/gallery/singapore-st.webp";
+import c3 from "../assets/gallery/sushanta-rokka.webp";
 
 function Gallery() {
   // const images = [
