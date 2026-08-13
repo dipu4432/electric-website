@@ -3,7 +3,7 @@ import "./banner.css";
 import { useState, useEffect } from "react";
 import { Modal, Button, Carousel } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import AppointmentForm from "./appointmentForm";
+import ContactForm from "./contactForm";
 
 /* Import your banner images */
 import heroBg1 from "../assets/electrical-brothers/bermix-studio.webp";
@@ -33,20 +33,26 @@ function Banner() {
   const slides = [
     {
       image: heroBg1,
-      title: "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
-      subtitle: "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
+      title:
+        "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
+      subtitle:
+        "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
       isPatholab: false,
     },
     {
       image: heroBg2,
-      title: "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
-      subtitle: "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
+      title:
+        "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
+      subtitle:
+        "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
       isPatholab: true,
     },
     {
       image: heroBg3,
-      title: "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
-      subtitle: "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
+      title:
+        "Powering Homes & Businesses with Safe, Reliable Electrical Solutions",
+      subtitle:
+        "From residential wiring to industrial electrical services, Electrical Brothers Group delivers quality workmanship with safety and professionalism.",
       isPatholab: false,
     },
   ];
@@ -79,25 +85,9 @@ function Banner() {
                 <p className="hero-subtitle">{slide.subtitle}</p>
 
                 <div className="hero-buttons">
-                  {/* Call Doctor */}
-                  {/* <Button
-                    className="call-btn"
-                    onClick={() => {
-                      window.location.href = `tel:${phoneNumber}`;
-                    }}
-                  >
-                    <FaPhoneAlt /> Call Doctor
-                  </Button> */}
-
-                  {/* Show only on 2nd slide */}
-                  {/* {slide.isPatholab && (
-                    <Button
-                      className="read-btn"
-                      onClick={() => navigate("/patholab")}
-                    >
-                      Know More
-                    </Button>
-                  )} */}
+                  <Button className="call-btn" onClick={() => setShow(true)}>
+                    Book Your Service
+                  </Button>
                 </div>
               </div>
             </div>
@@ -108,11 +98,11 @@ function Banner() {
       {/* Modal */}
       <Modal show={show} onHide={() => setShow(false)} centered size="lg">
         <Modal.Header closeButton>
-          <Modal.Title>Book Appointment</Modal.Title>
+          <Modal.Title>Book Your Service</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-          <AppointmentForm onSuccess={() => setShow(false)} />
+          <ContactForm onSuccess={() => setShow(false)} />
         </Modal.Body>
       </Modal>
     </section>

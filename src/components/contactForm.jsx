@@ -10,6 +10,7 @@ function ContactForm({ onSuccess }) {
     e.preventDefault();
 
     const mobile = form.current.user_phone.value;
+    const email = form.current.user_email.value.trim();
 
     if (!/^[6-9]\d{9}$/.test(mobile)) {
       toast.error("Please enter a valid 10-digit mobile number.");
@@ -28,12 +29,14 @@ function ContactForm({ onSuccess }) {
       );
 
       // Auto-reply to customer
-      await emailjs.sendForm(
-        "service_nd2inbz",
-        "template_n12txll",
-        form.current,
-        "fzxAXqEl_aHNbOpON"
-      );
+      if (email) {
+        await emailjs.sendForm(
+          "service_nd2inbz",
+          "template_n12txll",
+          form.current,
+          "fzxAXqEl_aHNbOpON"
+        );
+      }
 
       toast.success("Message sent successfully!");
 

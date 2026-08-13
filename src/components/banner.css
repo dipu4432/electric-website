@@ -47,6 +47,16 @@
   flex-wrap: wrap;
 }
 
+/* Hero Buttons */
+.hero-buttons .btn {
+  width: auto !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: start;
+  flex: 0 0 auto;
+}
+
+
 .read-btn {
   background: #3B82A0 !important;
   border: none !important;
@@ -96,7 +106,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .hero-slide {
-    height: 70vh;
+    height: 80vh;
   }
 
   .hero-title {
