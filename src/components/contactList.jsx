@@ -1,9 +1,17 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FaPhoneAlt, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { useState } from "react";
+import ContactForm from "./contactForm";
 
 function ContactList() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div
       className="contact-card"
@@ -113,10 +121,25 @@ function ContactList() {
                   8959164260
                 </a>
               </p> */}
+              <p className="mb-0">
+                <Button variant="primary" onClick={handleShow}>
+                  Contact Us
+                </Button>
+              </p>
             </div>
           </Col>
         </Row>
       </Container>
+
+      <Modal show={show} onHide={handleClose} centered size="md">
+        <Modal.Header closeButton>
+          <Modal.Title>Contact Us</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <ContactForm onSuccess={handleClose} />
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }
