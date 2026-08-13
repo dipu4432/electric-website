@@ -4,17 +4,20 @@ import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import "./gallery.css";
 
-import g1 from "../assets/gallery/andrey-matveev.webp";
-import g2 from "../assets/gallery/blaz-erzetic.webp";
-import g3 from "../assets/gallery/community-archives.webp";
-import c1 from "../assets/gallery/mariana.webp";
-import c2 from "../assets/gallery/singapore-st.webp";
-import c3 from "../assets/gallery/sushanta-rokka.webp";
+import a1 from "../assets/gallery/american-public.webp";
+import a2 from "../assets/gallery/blaz-erzetic.webp";
+import a3 from "../assets/gallery/community-archives.webp";
+import a4 from "../assets/gallery/mariana.webp";
+import a5 from "../assets/gallery/singapore-st.webp";
+// import a6 from "../assets/gallery/sushanta-rokka.webp";
+import a7 from "../assets/gallery/american.webp";
+import a8 from "../assets/gallery/shivaprakash.webp";
+import a9 from "../assets/gallery/heri-susilo.webp";
 
 function Gallery() {
 
   const images = [
-    g1, g2, g3, c1, c2, c3
+    a1, a2, a3, a4, a5, a7, a8, a9
   ];
 
   const [startIndex, setStartIndex] = useState(0);
@@ -28,7 +31,7 @@ function Gallery() {
       } else if (window.innerWidth < 768) {
         setVisibleCount(2);
       } else if (window.innerWidth < 992) {
-        setVisibleCount(3);
+        setVisibleCount(2);
       } else {
         setVisibleCount(4);
       }

@@ -10,7 +10,7 @@ function ContactList() {
       style={{
         backgroundColor: "#eef2f6",
         padding: "20px 0",
-        paddingBottom: "20px",
+        paddingBottom: "45px",
         marginBottom: "0",
       }}
     >
@@ -21,10 +21,20 @@ function ContactList() {
         <Row className="g-4 justify-content-center">
           {/* Address Card */}
           <Col md={6}>
-            <div
+            {/* <div
               style={{
                 background:
                   "linear-gradient(to bottom, #ECF2FE 0%, #FFFFFF 40%, #FFFFFF 60%, #ECF2FE 100%)",
+                padding: "20px",
+                borderRadius: "10px",
+                boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+                height: "100%",
+                marginBottom: "0",
+              }}
+            > */}
+            <div
+              style={{
+                background: "#fff",
                 padding: "20px",
                 borderRadius: "10px",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
@@ -44,10 +54,20 @@ function ContactList() {
 
           {/* Mobile Number Card */}
           <Col md={6}>
-            <div
+            {/* <div
               style={{
                 background:
                   "linear-gradient(to bottom, #ECF2FE 0%, #FFFFFF 40%, #FFFFFF 60%, #ECF2FE 100%)",
+                padding: "20px",
+                borderRadius: "10px",
+                boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+                height: "100%",
+                marginBottom: "0",
+              }}
+            > */}
+            <div
+              style={{
+                background: "#fff",
                 padding: "20px",
                 borderRadius: "10px",
                 boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
@@ -82,7 +102,7 @@ function ContactList() {
                 </a>
               </p>
 
-              <p className="mb-0 d-flex align-items-center">
+              {/* <p className="mb-0 d-flex align-items-center">
                 <FaWhatsapp className="me-2 text-success" />
                 <a
                   href="https://wa.me/918959164260"
@@ -92,7 +112,7 @@ function ContactList() {
                 >
                   8959164260
                 </a>
-              </p>
+              </p> */}
             </div>
           </Col>
         </Row>

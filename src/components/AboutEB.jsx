@@ -5,7 +5,7 @@ const AboutEB = () => {
   return (
     <section className="py-3" id="about">
       <Container>
-        <Row className="align-items-center g-5">
+        <Row className="align-items-center">
           {/* Image */}
           <Col lg={6}>
             <img

@@ -109,3 +109,17 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home,
+#features,
+#about-us,
+#services,
+#gallery,
+#reviews,
+#contact {
+  scroll-margin-top: 90px;
+}

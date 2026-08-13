@@ -22,8 +22,8 @@ function Services() {
   const services = [
   {
     image: <FaBolt size={60} color="#FFC107" />,
-    title: "Electrical Installation",
-    desc: "Professional electrical installations for homes, offices, and industries.",
+    title: "Electrical Installation & Pole Services",
+    desc: "Professional electrical installations, electric pole erection, wiring, and power distribution solutions.",
   },
   {
     image: <FaPlug size={60} color="#FFC107" />,
@@ -38,7 +38,7 @@ function Services() {
   {
     image: <FaBuilding size={60} color="#FFC107" />,
     title: "Residential, Commercial & Industrial Services",
-    desc: "Complete electrical solutions.",
+    desc: "Complete electrical solutions for residential, commercial, and industrial projects.",
   },
   {
     image: <FaSolarPanel size={60} color="#FFC107" />,

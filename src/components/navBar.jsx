@@ -24,12 +24,13 @@ function NavBar() {
         bg="light"
         expand="lg"
         expanded={expanded}
+        sticky="top"
         className="py-2 shadow-sm"
       >
         <Container fluid className="px-3 px-lg-5">
           {/* Logo */}
-          <Navbar.Brand as={Link} to="/#home" onClick={closeNavbar}>
-            <img src={logo} alt="Tiwari Nursing Home" />
+          <Navbar.Brand href="#home" onClick={closeNavbar}>
+            <img src={logo} alt="Electrical Brothers" />
           </Navbar.Brand>
 
           {/* Toggle */}
@@ -41,27 +42,27 @@ function NavBar() {
           <Navbar.Collapse id="basic-navbar-nav">
             {/* Links */}
             <Nav className="mx-auto nav-mobile">
-              <Nav.Link as={NavLink} to="/#home" onClick={closeNavbar}>
+              <Nav.Link href="#home" onClick={closeNavbar}>
                 Home
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/#about-us" onClick={closeNavbar}>
+              <Nav.Link href="#about-us" onClick={closeNavbar}>
                 About Us
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/#services" onClick={closeNavbar}>
+              <Nav.Link href="#services" onClick={closeNavbar}>
                 Services
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/#gallery" onClick={closeNavbar}>
+              <Nav.Link href="#gallery" onClick={closeNavbar}>
                 Gallery
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/#reviews" onClick={closeNavbar}>
+              <Nav.Link href="#reviews" onClick={closeNavbar}>
                 Reviews
               </Nav.Link>
 
-              <Nav.Link as={NavLink} to="/#contact" onClick={closeNavbar}>
+              <Nav.Link href="#contact" onClick={closeNavbar}>
                 Contact Us
               </Nav.Link>
 
@@ -73,7 +74,7 @@ function NavBar() {
             {/* Right Side */}
             <div className="d-flex gap-2 nav-btn-group">
               {/* WhatsApp Button */}
-              {/* <a
+              <a
                 href={`https://wa.me/${phoneNumber1}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -81,7 +82,7 @@ function NavBar() {
                 aria-label="WhatsApp"
               >
                 <FaWhatsapp className="me-2" />
-              </a> */}
+              </a>
 
               <Dropdown className="call-dropdown">
                 <Dropdown.Toggle className="call-btn no-arrow">

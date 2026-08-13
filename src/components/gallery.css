@@ -51,14 +51,14 @@
 }
 
 /* Tablet = 3 */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .gallery-card {
-    width: calc(33.33% - 11px);
+    width: calc(50% - 8px);
   }
-}
+} */
 
 /* Small tablet = 2 */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .gallery-card {
     width: calc(50% - 8px);
   }

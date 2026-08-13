@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 import AppointmentForm from "./appointmentForm";
 
 /* Import your banner images */
-import heroBg1 from "../assets/electrical-brothers/raze-solar.webp";
+import heroBg1 from "../assets/electrical-brothers/bermix-studio.webp";
 import heroBg2 from "../assets/electrical-brothers/sungrow-emea.webp";
-import heroBg3 from "../assets/electrical-brothers/bermix-studio.webp";
+import heroBg3 from "../assets/electrical-brothers/yuan-yang.webp";
 
 function Banner() {
   const [show, setShow] = useState(false);

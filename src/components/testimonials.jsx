@@ -24,7 +24,8 @@ function Testimonials() {
 
         <div className="row g-4 mb-0">
           {/* Map Card */}
-          <div className="col-12 col-sm-6 col-md-4 mb-0">
+          {/* <div className="col-12 col-sm-6 col-md-4 mb-0"> */}
+          <div className="col-12 col-lg-4 mb-0">
             <div className="card p-3 shadow-sm rounded h-100 mb-0">
               <h5 className="fw-bold mb-3">Google Map</h5>
 
@@ -44,7 +45,7 @@ function Testimonials() {
           </div>
 
           {/* Review 1 */}
-          <div className="col-12 col-sm-6 col-md-4 mb-0">
+          <div className="col-12 col-sm-6 col-lg-4 mb-0">
             <div className="card p-4 shadow-sm rounded h-100 mb-0">
               <div className="d-flex align-items-center mb-3 gap-3">
                 <img
@@ -74,7 +75,7 @@ function Testimonials() {
           </div>
 
           {/* Review 2 */}
-          <div className="col-12 col-sm-6 col-md-4 mb-0">
+          <div className="col-12 col-sm-6 col-lg-4 mb-0">
             <div className="card p-4 shadow-sm rounded h-100 mb-0">
               <div className="d-flex align-items-center mb-3 gap-3">
                 <img
