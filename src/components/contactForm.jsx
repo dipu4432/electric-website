@@ -70,7 +70,6 @@ function ContactForm({ onSuccess }) {
             name="user_email"
             className="form-control"
             placeholder="Your Email"
-            required
           />
         </div>
 

@@ -123,7 +123,7 @@ function ContactList() {
               </p> */}
               <p className="mb-0">
                 <Button variant="primary" onClick={handleShow}>
-                  Contact Us
+                  Book Service
                 </Button>
               </p>
             </div>
@@ -133,7 +133,7 @@ function ContactList() {
 
       <Modal show={show} onHide={handleClose} centered size="md">
         <Modal.Header closeButton>
-          <Modal.Title>Contact Us</Modal.Title>
+          <Modal.Title>Book Your Service</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
