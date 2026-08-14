@@ -6,6 +6,12 @@ function ContactForm({ onSuccess }) {
   const form = useRef();
   const [loading, setLoading] = useState(false);
 
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const CONTACT_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID;
+  const AUTO_REPLY_TEMPLATE_ID = import.meta.env
+    .VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const sendEmail = async (e) => {
     e.preventDefault();
 
@@ -22,19 +28,19 @@ function ContactForm({ onSuccess }) {
 
       // Email to you
       await emailjs.sendForm(
-        "service_nd2inbz",
-        "template_xzo4xm9",
+        SERVICE_ID,
+        CONTACT_TEMPLATE_ID,
         form.current,
-        "fzxAXqEl_aHNbOpON"
+        PUBLIC_KEY,
       );
 
       // Auto-reply to customer
       if (email) {
         await emailjs.sendForm(
-          "service_nd2inbz",
-          "template_n12txll",
+          SERVICE_ID,
+          AUTO_REPLY_TEMPLATE_ID,
           form.current,
-          "fzxAXqEl_aHNbOpON"
+          PUBLIC_KEY,
         );
       }
 
